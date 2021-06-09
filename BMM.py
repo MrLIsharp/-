@@ -5,8 +5,8 @@
 ans_reverse=[]  #存放逆向匹配的结果
 #实现逆向最大匹配算法中的切词方法
 def cut_words(raw_sentence,words_dict):
-#max_length=5    #分词字典中最大长度字符串的长度
-#要是分词字典列表中最大长度字符串的长度一眼看不出来，可采用下一行的形式
+    #max_length=5    #分词字典中最大长度字符串的长度
+    #要是分词字典列表中最大长度字符串的长度一眼看不出来，可采用下一行的形式
     max_length=len(sorted(words_dict, key=lambda x: len(x))[-1])
     #1、正向最大匹配
     len_row=len(raw_sentence)
